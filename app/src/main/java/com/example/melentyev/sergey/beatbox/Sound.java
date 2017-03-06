@@ -4,6 +4,7 @@ public class Sound {
     private String mAssetPath;
     private String mName;
     private String mImage;
+    private Integer mSoundId;
 
     public Sound(String assetPath) {
         mAssetPath = assetPath;
@@ -21,5 +22,11 @@ public class Sound {
     }
     public String getImage() {
         return mImage;
+    }
+    public Integer getSoundId() {
+        return mSoundId;
+    }
+    public void setSoundId(Integer soundId) {
+        mSoundId = soundId;
     }
 }
