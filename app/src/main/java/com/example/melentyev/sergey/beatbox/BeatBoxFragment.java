@@ -37,6 +37,12 @@ public class BeatBoxFragment extends Fragment {
         return binding.getRoot();
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mBeatBox.release();
+    }
+
     private class SoundAdapter extends RecyclerView.Adapter<SoundHolder> {
         private List<Sound> mSounds;
 
